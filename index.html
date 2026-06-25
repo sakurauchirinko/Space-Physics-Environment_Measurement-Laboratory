@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>宇宙物理環境・計測研究室 | 千葉工業大学</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <a class="site-header__title" href="index.html">
+    <p>千葉工業大学 工学部 宇宙・半導体工学科</p>
+    <p>宇宙物理環境・計測研究室</p>
+  </a>
+  <button class="nav-toggle" type="button" aria-label="メニューを開閉" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav">
+    <a class="is-active" href="index.html">ホーム</a>
+    <a href="about.html">研究室概要</a>
+    <a href="professor.html">教授紹介</a>
+    <span class="nav__item nav__dropdown" tabindex="0">学生の研究
+      <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="nav__menu">
+        <a href="students-master.html">修士課程</a>
+        <a href="students-undergrad.html">学部生</a>
+      </span>
+    </span>
+    <span class="nav__item">JP/EN</span>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="about">
+  <div class="hero__bg">
+    <img src="./images/hero-bg.jpg" alt=""
+         onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/076f2999-e2b8-4ef3-8b01-446fbd892e83'">
+  </div>
+  <h1 class="hero__title">宇宙環境計測を支える応用物理<br>×<br>センサー工学</h1>
+  <div class="hero__lead">
+    <p data-en="We develop next-generation observation instruments<br>for satellites and exploration spacecraft.">人工衛星や探査機に搭載する<br>次世代の観測装置を研究開発しています。</p>
+    <p data-en="Under the theme of 'Space Environment Physics and Measurement,'<br>and grounded in applied physics and sensor engineering,<br>we carry out initial studies, conceptual design, and prototyping<br>of measurement instruments for meteoroids and micro-debris.">「宇宙環境物理・計測」を掲げ、<br>応用物理学とセンサー工学を基盤に、<br>メテオロイドや微小デブリ等の計測装置の<br>初期検討や概念設計、試作を行います。</p>
+    <p data-en="Beyond a practical understanding of space development,<br>we aim to bridge theory and real-hardware development,<br>directly fostering mastery of advanced measurement technologies.">宇宙開発の実践的理解に加え、<br>高度な計測技術の習得にも直結する、<br>理論と実機開発の架け橋を目指します。</p>
+  </div>
+  <div class="hero__cta-row">
+    <a class="hero__cta" href="about.html">研究室概要
+      <span class="btn-circle">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h12M12 6l6 6-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ NEWS ============ -->
+<section class="section section--news" id="news">
+  <div class="card">
+    <div class="card__head">
+      <h2>お知らせ</h2>
+    </div>
+    <div class="news-item">
+      <time>2026/06/05</time>
+      <p>お知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせ</p>
+    </div>
+    <div class="news-item">
+      <time>2026/06/05</time>
+      <p>コード直書きでお知らせを更新していくなら、↗️のアーカイブ表示は管理が大変なのでなくてもいい</p>
+    </div>
+    <div class="news-item">
+      <time>2026/06/05</time>
+      <p>お知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせ</p>
+    </div>
+    <div class="news-item">
+      <time>2026/06/05</time>
+      <p>お知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせお知らせ</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROFESSOR ============ -->
+<section class="section section--professor" id="professor">
+  <div class="card">
+    <div class="card__head">
+      <h2>教授挨拶</h2>
+    </div>
+    <div class="professor__body">
+      <p>軽めの挨拶文をここに入れてください。以下コピペ</p>
+      <p>主に、人工衛星のデータを使った惑星間の高速荷電粒子の現象解明やかぐやに搭載された月ガンマ線分光計の開発、運用、データ解析に携わってきました。PERCでは惑星探査機に搭載する科学機器の研究開発に取り組んでいます。これから参画していく惑星探査ミッションから得られる知見によって惑星科学の発展と人類平和に貢献できればうれしいです。</p>
+    </div>
+    <div class="card__foot">
+      <a class="card__link" href="professor.html">
+        <span>教授紹介</span>
+        <span class="btn-circle">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h12M12 6l6 6-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STUDENT RESEARCH ============ -->
+<section class="section" id="research">
+  <h2 class="section__title">学生の研究</h2>
+  <div class="research__grid">
+    <a class="research-card" href="students-master.html">
+      <img src="./images/research-master.jpg" alt=""
+           onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/b4abc0e6-9375-4cf6-a36a-3c8fd918688b'">
+      <span>修士課程</span>
+    </a>
+    <a class="research-card" href="students-undergrad.html">
+      <img src="./images/research-undergrad.jpg" alt=""
+           onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/3501c903-c487-4912-97f1-0c8298c6d942'">
+      <span>学部生</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ RELATED PAGES ============ -->
+<section class="section" id="related">
+  <h2 class="section__title">関連ページ</h2>
+  <div class="related__logos">
+    <a href="https://www.isas.jaxa.jp/" target="_blank" rel="noopener noreferrer">
+      <img class="logo-jaxa" src="./images/logo-jaxa.png" alt="JAXA"
+           onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/c85fe0bb-ce3e-4aa1-ac2c-358f99e4038b'">
+    </a>
+    <a href="https://www.perc.it-chiba.ac.jp/" target="_blank" rel="noopener noreferrer">
+      <img class="logo-perc" src="./images/logo-perc.png" alt="惑星探査研究センター PERC"
+           onerror="this.onerror=null;this.src='https://www.figma.com/api/mcp/asset/0a7bded7-5e5c-4636-aeb8-64a2beb699bc'">
+    </a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer__inner">
+    <div class="footer__title">
+      <p>千葉工業大学 工学部 宇宙・半導体工学科</p>
+      <p>宇宙物理環境・計測研究室</p>
+    </div>
+    <div class="footer__contact">
+      <div class="footer__block">
+        <p>〒275-0016 千葉県習志野市津田沼2-17-1</p>
+        <p>千葉工業大学津田沼キャンパス4号館</p>
+      </div>
+      <div class="footer__block">
+        <p>TEL : 012-3456-7890</p>
+        <p>E-mail : example@email.com</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

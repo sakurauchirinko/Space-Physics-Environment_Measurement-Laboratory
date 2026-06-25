@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>学生の研究 学部生 | 宇宙物理環境・計測研究室</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <a class="site-header__title" href="index.html">
+    <p>千葉工業大学 工学部 宇宙・半導体工学科</p>
+    <p>宇宙物理環境・計測研究室</p>
+  </a>
+  <button class="nav-toggle" type="button" aria-label="メニューを開閉" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav">
+    <a href="index.html">ホーム</a>
+    <a href="about.html">研究室概要</a>
+    <a href="professor.html">教授紹介</a>
+    <span class="nav__item nav__dropdown is-active" tabindex="0">学生の研究
+      <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="nav__menu">
+        <a href="students-master.html">修士課程</a>
+        <a href="students-undergrad.html">学部生</a>
+      </span>
+    </span>
+    <span class="nav__item">JP/EN</span>
+  </nav>
+</header>
+
+<!-- ============ PAGE TITLE BAND ============ -->
+<section class="page-hero">
+  <div class="page-hero__bg">
+    <img src="./images/students-undergrad-hero.jpg" alt=""
+         onerror="this.onerror=null;this.src='./images/overview-hero.jpg'">
+  </div>
+  <h1>学生の研究　学部生</h1>
+</section>
+
+<!-- ============ CONTENT ============ -->
+<section class="content">
+  <!-- 目次 -->
+  <nav class="toc" aria-label="目次">
+    <h2 class="toc__title">目次</h2>
+    <ul class="toc__list">
+      <li><a href="#research-1">研究内容のタイトル　学生氏名１</a></li>
+      <li><a href="#research-2">研究内容のタイトル　学生氏名２</a></li>
+    </ul>
+  </nav>
+
+  <!-- 研究 1 -->
+  <article class="card" id="research-1">
+    <h2 class="card__title">研究内容のタイトル　学生氏名１</h2>
+    <div class="card__body">
+      <div class="card__text">
+        <p>研究内容の詳細について記載してください。</p>
+        <p>研究内容、研究実績以外にも記載できることがあればタブを増やして対応<br>写真とかもいい感じに入れる</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- 研究 2 -->
+  <article class="card" id="research-2">
+    <h2 class="card__title">研究内容のタイトル　学生氏名２</h2>
+    <div class="card__body">
+      <div class="card__text">
+        <p>研究内容の詳細について記載してください。</p>
+        <p>研究内容、研究実績以外にも記載できることがあればタブを増やして対応<br>写真とかもいい感じに入れる</p>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer__inner">
+    <div class="footer__title">
+      <p>千葉工業大学 工学部 宇宙・半導体工学科</p>
+      <p>宇宙物理環境・計測研究室</p>
+    </div>
+    <div class="footer__contact">
+      <div class="footer__block">
+        <p>〒275-0016 千葉県習志野市津田沼2-17-1</p>
+        <p>千葉工業大学津田沼キャンパス4号館</p>
+      </div>
+      <div class="footer__block">
+        <p>TEL : 012-3456-7890</p>
+        <p>E-mail : example@email.com</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
