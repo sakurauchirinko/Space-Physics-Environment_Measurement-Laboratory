@@ -12,28 +12,7 @@
 <body>
 
 <!-- ============ HEADER ============ -->
-<header class="site-header">
-  <a class="site-header__title" href="index.html">
-    <p>千葉工業大学 工学部 宇宙・半導体工学科</p>
-    <p>宇宙物理環境・計測研究室</p>
-  </a>
-  <button class="nav-toggle" type="button" aria-label="メニューを開閉" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-  <nav class="nav">
-    <a href="index.html">ホーム</a>
-    <a href="about.html">研究室概要</a>
-    <a href="professor.html">教授紹介</a>
-    <span class="nav__item nav__dropdown is-active" tabindex="0">学生の研究
-      <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <span class="nav__menu">
-        <a href="students-master.html">修士課程</a>
-        <a href="students-undergrad.html">学部生</a>
-      </span>
-    </span>
-    <span class="nav__item">JP/EN</span>
-  </nav>
-</header>
+<div id="site-header"></div>
 
 <!-- ============ PAGE TITLE BAND ============ -->
 <section class="page-hero">
@@ -79,25 +58,9 @@
 </section>
 
 <!-- ============ FOOTER ============ -->
-<footer class="site-footer">
-  <div class="footer__inner">
-    <div class="footer__title">
-      <p>千葉工業大学 工学部 宇宙・半導体工学科</p>
-      <p>宇宙物理環境・計測研究室</p>
-    </div>
-    <div class="footer__contact">
-      <div class="footer__block">
-        <p>〒275-0016 千葉県習志野市津田沼2-17-1</p>
-        <p>千葉工業大学津田沼キャンパス4号館</p>
-      </div>
-      <div class="footer__block">
-        <p>TEL : 012-3456-7890</p>
-        <p>E-mail : example@email.com</p>
-      </div>
-    </div>
-  </div>
-</footer>
+<div id="site-footer"></div>
 
+<script src="components.js" defer></script>
 <script src="script.js" defer></script>
 </body>
 </html>
