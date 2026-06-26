@@ -63,13 +63,14 @@ a{text-decoration:none;color:inherit;}
 .to-top:hover{filter:brightness(1.05);transform:translateY(-2px);}
 .to-top svg,.to-top img{width:32px;height:32px;display:block;}
 /* 先頭へ戻る：クリックでロケットが上へ発射 */
-.to-top.is-launching{pointer-events:none;}
+.to-top.is-launching{pointer-events:none;z-index:9999;}
 .to-top.is-launching:hover{transform:none;}
-.to-top.is-launching img{animation:rocket-blastoff .75s cubic-bezier(.5,0,.85,.2) forwards;}
+.to-top.is-launching img{animation:rocket-blastoff .9s cubic-bezier(.45,0,.85,.3) forwards;}
 @keyframes rocket-blastoff{
   0%{transform:translateY(0) scale(1);opacity:1;animation-timing-function:ease-out;}
-  18%{transform:translateY(7px) scale(.93);opacity:1;animation-timing-function:cubic-bezier(.45,0,.85,.2);}
-  100%{transform:translateY(-170px) scale(.38);opacity:0;}
+  16%{transform:translateY(8px) scale(.92);opacity:1;animation-timing-function:cubic-bezier(.4,0,.7,.55);}
+  90%{opacity:1;}
+  100%{transform:translateY(-125vh) scale(.55);opacity:0;}
 }
 
 /* 3-2 ヘッダー */
