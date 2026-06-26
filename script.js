@@ -138,12 +138,25 @@
   toTop.setAttribute("aria-label", "ページの先頭へ戻る");
   toTop.innerHTML = '<img src="./images/icons8-locket-60.png" alt="" aria-hidden="true">';
   document.body.appendChild(toTop);
-  var onScroll = function () {
-    toTop.classList.toggle("is-visible", window.pageYOffset > 300);
+  var launching = false;
+  var refresh = function () {
+    toTop.classList.toggle("is-visible", !launching && window.pageYOffset > 300);
   };
-  window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
+  window.addEventListener("scroll", function () { if (!launching) refresh(); }, { passive: true });
+  refresh();
   toTop.addEventListener("click", function () {
+    if (launching) return;
+    launching = true;
+    toTop.classList.add("is-launching");          // ロケット発射
     window.scrollTo({ top: 0, behavior: "smooth" });
+    var img = toTop.querySelector("img");
+    var done = function () {
+      if (img) img.removeEventListener("animationend", done);
+      toTop.classList.remove("is-launching");      // 位置をリセット（この時点では非表示）
+      launching = false;
+      refresh();
+    };
+    if (img) { img.addEventListener("animationend", done); }
+    else { setTimeout(done, 800); }
   });
 })();
