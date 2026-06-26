@@ -207,14 +207,17 @@ a{text-decoration:none;color:inherit;}
   .site-header{flex-direction:row;align-items:center;justify-content:space-between;flex-wrap:nowrap;padding:16px clamp(16px,5vw,40px);}
   .nav-toggle{display:flex;}
   .nav{
-    display:none;
+    display:flex;
     position:fixed;inset:0;z-index:15;
     flex-direction:column;align-items:stretch;gap:0;
     background:var(--navy);
     padding:100px 0 48px;
     overflow-y:auto;
+    /* 閉じている状態（フェード＋スライドのため display:none は使わない） */
+    opacity:0;visibility:hidden;transform:translateY(-20px);
+    transition:opacity .28s ease, transform .28s ease, visibility .28s;
   }
-  .site-header.is-open .nav{display:flex;}
+  .site-header.is-open .nav{opacity:1;visibility:visible;transform:none;}
   .site-header.is-open .site-header__title{visibility:hidden;}
   .nav > a,.nav > .nav__item{font-size:20px;width:100%;padding:20px 40px;}
   .nav .is-active::after{display:none;}
@@ -279,4 +282,9 @@ a{text-decoration:none;color:inherit;}
   .footer__title p:last-child {font-size:16px;line-height:1.4;}
   .footer__contact{font-size:14px;}
   .footer__contact p{line-height:1.7;}
+}
+
+/* 「動きを減らす」設定の端末ではアニメーションを無効化 */
+@media (prefers-reduced-motion: reduce){
+  .nav{transition-duration:.01ms;}
 }
