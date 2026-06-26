@@ -48,12 +48,12 @@ a{text-decoration:none;color:inherit;}
 }
 .btn-circle svg{width:24px;height:24px;}
 
-/* ページ先頭へ戻るボタン（下スクロールで右下に出現） */
+/* ページ先頭へ戻るボタン（スマホのみ・下スクロールで右下に出現） */
 .to-top{
   position:fixed;right:clamp(16px,4vw,32px);bottom:clamp(16px,4vw,32px);
   width:48px;height:48px;border-radius:50%;border:0;
   background:var(--blue);color:#fff;cursor:pointer;
-  display:flex;align-items:center;justify-content:center;
+  display:none;align-items:center;justify-content:center;
   box-shadow:0 6px 16px rgba(0,0,0,.3);
   opacity:0;visibility:hidden;transform:translateY(12px);
   transition:opacity .25s ease, transform .25s ease, visibility .25s;
@@ -221,6 +221,7 @@ a{text-decoration:none;color:inherit;}
   /* ヘッダー: ハンバーガーメニュー */
   .site-header{flex-direction:row;align-items:center;justify-content:space-between;flex-wrap:nowrap;padding:16px clamp(16px,5vw,40px);}
   .nav-toggle{display:flex;}
+  .to-top{display:flex;}
   .nav{
     display:flex;
     position:fixed;inset:0;z-index:15;
