@@ -136,21 +136,7 @@
   toTop.className = "to-top";
   toTop.type = "button";
   toTop.setAttribute("aria-label", "ページの先頭へ戻る");
-  toTop.innerHTML = '<svg viewBox="0 0 64 64" aria-hidden="true">' +
-    // 炎（外：オレンジ）
-    '<path d="M26 47c0 7 3 13 6 16 3-3 6-9 6-16-2 2-4 2-6 1-2 1-4 1-6-1z" fill="#ff7a1a"/>' +
-    // 炎（内：黄）
-    '<path d="M29 48c0 5 1.5 9 3 11 1.5-2 3-6 3-11-1 1-2 1.2-3 .6-1 .6-2 .4-3-.6z" fill="#ffd23f"/>' +
-    // 左フィン
-    '<path d="M23 36c-5 4-9 10-10 14 5-2 9-4 11.5-6z" fill="#b13bd6"/>' +
-    // 右フィン
-    '<path d="M41 36c5 4 9 10 10 14-5-2-9-4-11.5-6z" fill="#b13bd6"/>' +
-    // 機体
-    '<path d="M32 4c8 8 12 21 10 34-0.5 6-4.5 10-10 10s-9.5-4-10-10C20 25 24 12 32 4z" fill="#3b5bdb"/>' +
-    // 窓（白）
-    '<circle cx="32" cy="24" r="7" fill="#fff"/>' +
-    // 窓（内：水色）
-    '<circle cx="32" cy="24" r="4" fill="#bcd4ff"/></svg>';
+  toTop.innerHTML = '<img src="./images/icons8-locket-60.png" alt="" aria-hidden="true">';
   document.body.appendChild(toTop);
   var onScroll = function () {
     toTop.classList.toggle("is-visible", window.pageYOffset > 300);

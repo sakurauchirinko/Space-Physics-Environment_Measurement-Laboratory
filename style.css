@@ -61,7 +61,7 @@ a{text-decoration:none;color:inherit;}
 }
 .to-top.is-visible{opacity:1;visibility:visible;transform:none;}
 .to-top:hover{filter:brightness(1.05);transform:translateY(-2px);}
-.to-top svg{width:30px;height:30px;}
+.to-top svg,.to-top img{width:32px;height:32px;display:block;}
 
 /* 3-2 ヘッダー */
 .site-header{
