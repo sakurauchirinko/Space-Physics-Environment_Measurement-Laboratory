@@ -1,6 +1,6 @@
 /* =============================================================
    宇宙物理環境・計測研究室 — 共通スタイルシート
-   index.html / about.html で共有
+   全ページ共通（index / about / professor / students-master / students-undergrad）
    -------------------------------------------------------------
    1. デザイントークン (:root)
    2. ベース / リセット
@@ -170,7 +170,7 @@ a{text-decoration:none;color:inherit;}
 .hero__cta-row{width:100%;display:flex;justify-content:flex-end;}
 .hero__cta{display:inline-flex;align-items:center;gap:8px;color:#fff;font-size:16px;letter-spacing:.8px;}
 
-/* 4-2 TOP: お知らせ一覧 */
+/* 4-2 TOP: お知らせ */
 .news-item{
   display:flex;gap:24px;padding:24px;
   border-bottom:1px solid var(--line);
