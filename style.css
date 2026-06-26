@@ -283,8 +283,3 @@ a{text-decoration:none;color:inherit;}
   .footer__contact{font-size:14px;}
   .footer__contact p{line-height:1.7;}
 }
-
-/* 「動きを減らす」設定の端末ではアニメーションを無効化 */
-@media (prefers-reduced-motion: reduce){
-  .nav{transition-duration:.01ms;}
-}
